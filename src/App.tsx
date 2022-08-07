@@ -35,7 +35,10 @@ function Input({ children }: any): JSX.Element {
 
 const Icon = ({ children, ...props }: any) => {
   if (children) {
-    return children(props);
+    if (typeof children === "function") {
+      return children(props);
+    }
+    return children;
   }
   return (
     <div className="icon">
@@ -80,6 +83,13 @@ function App() {
                 </>
               );
             }}
+          </Input.Icon>
+        </Input>
+      </div>
+      <div>
+        <Input>
+          <Input.Icon>
+            <div>override the whole icon slot</div>
           </Input.Icon>
         </Input>
       </div>
