@@ -1,0 +1,52 @@
+.App {
+  text-align: center;
+  color: #61dafb;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  box-sizing: border-box;
+  top: 10%;
+  left: 310px;
+}
+
+.icon-custom-button {
+  position: absolute;
+  box-sizing: border-box;
+  left: 200px;
+}
+
+.icon-custom {
+  color: red;
+  position: absolute;
+  box-sizing: border-box;
+  top: 10%;
+  left: 250px;
+}
+
+.red {
+  color: red !important;
+}
+
+.green {
+  color: green !important;
+}
+
+.input {
+  height: 50px;
+  width: 350px;
+  box-sizing: border-box;
+  padding-left: 1.5rem;
+}
